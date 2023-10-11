@@ -3,7 +3,7 @@ package com.micro.order.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "order")
+@Table(name = "order", schema = "public")
 public class Order {
 
     @Id

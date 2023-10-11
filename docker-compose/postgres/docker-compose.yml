@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:16
+    restart: 'no'
+    environment:
+      POSTGRES_DB: order_develop
+      POSTGRES_USER: order
+      POSTGRES_PASSWORD: order
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db-data/data:/var/lib/postgresql/data
